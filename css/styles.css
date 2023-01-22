@@ -625,15 +625,25 @@ background-color: var(--icon-hover);
     background-color: transparent;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    
+    outline: none;
 }
 
-.modal-input::placeholder {
+/* .modal-input:hover,  */
+
+.modal-input:focus {
+    border-color: var(--accent-color);
+}
+
+.modal-input:focus + .input-icon {
+    fill: var(--accent-color);
+}
+
+/* .modal-input::placeholder {
     font-size: 12px;
     line-height: calc(16/12);
     letter-spacing: 0.04em;
     color: rgba(117, 117, 117, 0.5);
-}
+} */
 
 .input-icon {
     position: absolute;
